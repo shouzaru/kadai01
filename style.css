@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+html{
+    text-align: center;
+}
+
+
+h1{
+    font-size: 40px;
+    margin: 30px auto 30px;
+}
+
+/* 出す手を選ぶところ*/
+.select{
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 20px auto 20px;
+}
+
+.select .selection{
+    margin: 0 auto 30px;
+    font-size: 20px;
+}
+
+/* グーチョキパーのボタンの装飾 */
+.select input{
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    border-radius: 30px;
+}
+input:hover{
+    background-color: green;
+}
+
+.kaisuu p{
+    font-size: 30px;
+    margin: 30px auto 30px;
+}
+
+/* あなたの手とコンピューターの手とを表示させる*/
+.boxs{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+
+.boxs .box1, .box2{
+    width: 400px;
+    height: 350px;
+    align-items: center;
+}
+
+.boxs h2{
+    /* margin-bottom:30px ; */
+    margin: 30px auto 30px;
+    font-size: 30px;
+}
+
+
+.boxs .box1 #player{
+    width: 200px;
+}
+
+
+.boxs .box2 #com{
+    width: 400px;
+}
+
+/* 勝敗の表示 */
+.result{
+    font-size: 60px;
+    color: brown;
+    margin: 0 auto 30px;
+}
+
+/* 対戦結果の表示 */
+table{
+    width:50%;
+    margin: 0 auto 30px;
+    /* border-collapse: collapse; */
+}
+
+th, td{
+    border: 1px solid;
+    border-color: #bfbfbf;
+    padding:5px;
+}
+th{
+    width: 30%;
+}
+
+.vs_count{
+    background-color: #cacaca;
+}
+

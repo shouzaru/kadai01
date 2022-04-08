@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけんアプリ</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>じゃんけんぽい！</h1>
+    
+
+    <div class="select">
+      <p class="selection">出す手を選んでください</p>
+        <input type="button" value="グー" onclick="jkn(0) ; count()">
+        <input type="button" value="チョキ" onclick="jkn(1) ; count()">
+        <input type="button" value="パー" onclick="jkn(2) ; count()">
+    </div>
+
+
+    <div class="boxs">
+
+      <div class="box1"> 
+        <h2>あなた</h2>
+        <img src="" id="player">
+      </div>
+
+      <div class="box2">
+        <h2>サザエ</h2>
+        <img src="" id="com">
+      </div>
+
+    </div>
+    
+    <p class="result">結果は…</p>
+
+
+    <table>
+      <tr class="vs_count">
+        <th>累積の対戦回数</th>
+        <td><p><span id="press-btn">0</span>回</p></td>
+      </tr>
+      <tr>
+        <th>勝ち</th>
+        <td><p><span id="win_count">0</span>回</p></td>
+      </tr>
+      <tr>
+        <th>負け</th>
+        <td><p><span id="lose_count">0</span>回</p></td>
+      </tr>
+      <tr>
+        <th>あいこ</th>
+        <td><p><span id="draw_count">0</span>回</p></td>
+      </tr>
+    </table>
+
+
+
+  
+  
+
+    
+
+    
+  
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
